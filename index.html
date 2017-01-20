@@ -5,6 +5,20 @@
 </head>
 <body ng-controller="mycontroller">
 <h1>{{name}}</h1>
+<div class="container">
+	<div class="display">{{display}}</div>
+	<div class="cancle"><button class="num btn_cancle">C</button></div>
+	<div class="keys">
+	<div class="num_keys">
+		<button class="num btn_black" ng-repeat="btn in btns" ng-click=btnclick(btn)>{{btn}}</button>
+		<button class="num btn_black">.</button>
+		<button class="num btn_equal">=</button>
+	</div>
+	<div class="operation">
+		<button class="num btn_op" ng-repeat="op in operations" ng-click=btnclick(op)>{{op}}</button>
+	</div>
+	</div>
+</div>
 <script type="text/javascript" src="public/bundle.js"></script>
 </body>
 </html>
