@@ -11,7 +11,7 @@
 	<div class="keys">
 	<div class="num_keys">
 		<button class="num btn_black" ng-repeat="btn in btns" ng-click=btnclick(btn)>{{btn}}</button>
-		<button class="num btn_black">.</button>
+		<button class="num btn_black" ng-click=decimal()>.</button>
 		<button class="num btn_equal" ng-click=equal()>=</button>
 	</div>
 	<div class="operation">
